@@ -13,6 +13,10 @@ const PLACES = [
 class App extends Component {
   constructor(props) {
     super();
+
+    this.state = {
+      activePlace: 0,
+    };
   }
 
   render() {
