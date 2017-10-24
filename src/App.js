@@ -34,7 +34,10 @@ class App extends Component {
                 {place.name}
              </button>
           ))}
-          <WeatherDisplay  zip={"12345"} />
+          <WeatherDisplay
+            key={this.state.activePlace}  
+            zip={PLACES[this.state.activePlace].zip} 
+          />
       </div>
     );
   }
