@@ -21,8 +21,11 @@ export class WeatherDisplay extends Component {
     }
 
     render() {
+      const weatherData = this.state.weatherData;
+      if (!weatherData)
+        return <div>Loading...</div>
       return (
-        <h1>Displaying weather for city {this.props.zip}!</h1>
+        <div>{JSON.stringify(weatherData)}</div>  
       );
     }
 }
