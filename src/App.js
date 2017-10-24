@@ -15,6 +15,16 @@ class App extends Component {
     return (
       <div className="App">
         <WeatherDisplay  zip={"12345"} />
+        {PLACES.map((place, index) => (
+             <button 
+                key={index}
+                onClick={() => {
+                  console.log('Clocked index ' + index);
+                }}
+             >
+                {place.name}
+             </button>
+          ))}
       </div>
     );
   }
