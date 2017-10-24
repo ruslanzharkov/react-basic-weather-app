@@ -14,17 +14,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <WeatherDisplay  zip={"12345"} />
         {PLACES.map((place, index) => (
              <button 
                 key={index}
                 onClick={() => {
-                  console.log('Clocked index ' + index);
+                  console.log('Clicked index ' + index);
                 }}
              >
                 {place.name}
              </button>
           ))}
+          <WeatherDisplay  zip={"12345"} />
       </div>
     );
   }
