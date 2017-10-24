@@ -11,6 +11,10 @@ const PLACES = [
 ];
 
 class App extends Component {
+  constructor(props) {
+    super();
+  }
+
   render() {
     return (
       <div className="App">
