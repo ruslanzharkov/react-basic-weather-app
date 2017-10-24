@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import {WeatherDisplay} from './WeatherDisplay';
 
-import "bootstrap/dist/css/bootstrap.css";
+import "bootswatch/lumen/bootstrap.css";
 import { Navbar, NavItem, Nav, Grid, Row, Col } from "react-bootstrap";
 
 const PLACES = [
