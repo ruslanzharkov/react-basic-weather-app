@@ -31,7 +31,7 @@ Application use api for render cities weather and created by facebook react-crea
 
 ```
 
-### Instalaton Guide
+### Instalation Guide
   * git clone 
   * cd react-basic-weather-app
   * npm install 
