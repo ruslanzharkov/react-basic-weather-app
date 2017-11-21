@@ -2,7 +2,8 @@
 Application use api for render cities weather and created by facebook react-create-app. See more https://github.com/facebookincubator/create-react-app
   - http://api.openweathermap.org 
   - https://bootswatch.com
-
+   
+   
 ## Picture example
 
 ![image](https://user-images.githubusercontent.com/28437795/31957045-3233a89a-b90f-11e7-99b8-7758cb5c2af6.png)
