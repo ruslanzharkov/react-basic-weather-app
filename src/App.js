@@ -9,13 +9,6 @@ import { Navbar, NavItem, Nav, Grid, Row, Col } from "react-bootstrap";
 // http://api.openweathermap.org/data/2.5/forecast?q=Bishkek&APPID=6d773b4d4da5704e915dc80ebeba3856
 // url sample for request to api for weather
 
-const PLACES = [
-  { name: "Palo Alto", zip: "94303" },
-  { name: "San Jose", zip: "94088" },
-  { name: "Santa Cruz", zip: "95062" },
-  { name: "Honolulu", zip: "96803" }
-];
-
 class App extends Component {
   constructor(props) {
     super();
