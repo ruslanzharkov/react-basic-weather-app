@@ -1,5 +1,5 @@
 # React Simple Weather App
-Application use api for render cities weather and created by facebook react-create-app. See more https://github.com/facebookincubator/create-react-app
+Application use api for render cities weather and created by facebook CRA. See more https://github.com/facebookincubator/create-react-app
   - http://api.openweathermap.org 
   - https://bootswatch.com
    

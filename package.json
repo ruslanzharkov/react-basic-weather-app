@@ -9,7 +9,7 @@
     "react-bootstrap": "^0.31.3",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.7",
-    "react-scripts": "1.0.14",
+    "react-scripts": "^2.0.5",
     "redux": "^4.0.0"
   },
   "scripts": {
