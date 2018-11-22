@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {actionCreators} from '../../actions'
-import ScoringModelsReactive from './ScoringModelsReactive';
+import {actionCreators} from '../actions'
+import SingleWeatherPage from '../components/SingleWeatherPage';
 
 class SingleWeatherContainer extends Component {
     render() {
         return(
-            
+            <SingleWeatherPage/>
         )
     }
 }

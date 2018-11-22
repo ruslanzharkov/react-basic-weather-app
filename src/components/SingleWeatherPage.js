@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class SingleWeather extends Component {
+class SingleWeatherPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,3 +14,5 @@ class SingleWeather extends Component {
         )
     }
 }
+
+export default SingleWeatherPage;
