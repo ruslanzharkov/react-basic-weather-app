@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {actionCreators} from '../actions'
-import SingleWeatherPage from '../components/SingleWeather/SingleWeatherPage';
+import WeatherPage from '../components/Weather/WeatherPage';
 
 class SingleWeatherContainer extends Component {
     render() {
         return(
-            <SingleWeatherPage getWeather={this.props.getWeather}/>
+            <WeatherPage getWeather={this.props.getWeather}/>
         )
     }
 }

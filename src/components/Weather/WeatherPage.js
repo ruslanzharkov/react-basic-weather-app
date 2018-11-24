@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './SingleWeatherPage.css'
+import './WeatherPage.css'
 
 class SingleWeatherPage extends Component {
     constructor(props) {
