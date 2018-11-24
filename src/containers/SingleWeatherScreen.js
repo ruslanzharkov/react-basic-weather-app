@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {actionCreators} from '../actions'
-import SingleWeatherPage from '../components/SingleWeatherPage';
+import SingleWeatherPage from '../components/SingleWeather/SingleWeatherPage';
 
 class SingleWeatherContainer extends Component {
     render() {
         return(
-            <SingleWeatherPage/>
+            <SingleWeatherPage getWeather={this.props.getWeather}/>
         )
     }
 }
@@ -20,6 +20,7 @@ function mapStateToProps (state) {
 
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({
+        getWeather: actionCreators.getWeather
     }, dispatch);
 }
 
