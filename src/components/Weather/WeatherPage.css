@@ -14,3 +14,17 @@
     font-size: 1.2rem;
     font-family: inherit;
 }
+
+.weather-button {
+    background: #ffffff;
+    color: #f2994a;
+    padding: 0.75rem;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-family: inherit;
+}
+
+.weather-button:hover {
+    border-color:#f2994a;
+}
