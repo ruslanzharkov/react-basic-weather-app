@@ -1,3 +1,16 @@
 .weather-container {
-    margin-top: 300px;
+    margin-top: 200px;
+}
+
+.weather-input {
+    width: 200px;
+    height: 20px;
+    background: #ffffff;
+    color: #000000;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: none;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-family: inherit;
 }
