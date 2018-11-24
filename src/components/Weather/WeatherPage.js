@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Input} from '../common/input';
 import './WeatherPage.css'
 
 class SingleWeatherPage extends Component {
@@ -20,7 +21,7 @@ class SingleWeatherPage extends Component {
     render() {
         return (
           <div className={'weather-container'}>
-            <input value={this.state.cityName} onChange={this.cityChange}/> 
+            <Input value={this.state.value} onChange={this.cityChange} className={'weather-input'}/>
             <button onClick={this.getWeatherByCity}>Get Weather</button> 
           </div>
         )
