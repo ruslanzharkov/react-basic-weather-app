@@ -7,14 +7,17 @@ import WeatherPage from '../components/Weather/WeatherPage';
 class SingleWeatherContainer extends Component {
     render() {
         return(
-            <WeatherPage getWeather={this.props.getWeather}/>
+            <WeatherPage 
+                getWeather={this.props.getWeather}
+                weather={this.props.weather}
+            />
         )
     }
 }
 
 function mapStateToProps (state) {
     return {
-       
+        weather: state.weather
     };
 }
 

@@ -24,6 +24,9 @@ class SingleWeatherPage extends Component {
           <div className={'weather-container'}>
             <Input value={this.state.value} onChange={this.cityChange} className={'weather-input'}/>
             <Button onClick={this.getWeatherByCity} className={'weather-button'}>Search</Button>
+            <div>
+                {console.log(this.props.weather)}
+            </div>
           </div>
         )
     }
