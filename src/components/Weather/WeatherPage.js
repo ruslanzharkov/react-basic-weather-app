@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Input} from '../common/input';
 import {Button} from '../common/button';
 import './WeatherPage.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class SingleWeatherPage extends Component {
     constructor(props) {
