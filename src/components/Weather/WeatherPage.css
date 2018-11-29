@@ -5,7 +5,7 @@
 .weather-input {
     width: 200px;
     height: 20px;
-    background: rgb(41, 38, 38);
+    background: #212424;
     color: #fff;
     padding: 0.75rem;
     border: 1px solid #fff;
@@ -16,9 +16,11 @@
 }
 
 .weather-button {
-    background: #ffffff;
-    color: #000000;
-    padding: 0.65rem;
+    background:  #212424;
+    color: #e1e1e1;
+    padding: 0.69rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
     cursor: pointer;
     margin: 8px;
     font-size: 1.2rem;
@@ -26,5 +28,6 @@
 }
 
 .weather-button:hover {
-   
+    color: #41c7c7;
+    border: 1px solid #41c7c7;
 }
