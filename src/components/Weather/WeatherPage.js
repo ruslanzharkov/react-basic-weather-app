@@ -3,6 +3,7 @@ import {Input} from '../common/input';
 import {Button} from '../common/button';
 import './WeatherPage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Line} from 'react-chartjs-2';
 
 class SingleWeatherPage extends Component {
     constructor(props) {
