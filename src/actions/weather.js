@@ -7,10 +7,20 @@ export const getWeather = (cityName) => {
     return dispatch => {
         return axios.get(`${api}?q=${cityName}&APPID=${token}`)
             .then((response) => {
-                dispatch({
-                    type: actionTypes.GET_WEATHER,
-                    payload: response.data
-                })
+                filterWeather(response.data)
             })
     }
 }
+
+const filterWeather = (weather) => {
+    console.log('worked', weather.list);
+    let newWeatherArray = [];
+    // for (let i = 0; i < weather.lengt)
+
+    return dispatch => {
+        dispatch({
+            type: actionTypes.GET_WEATHER,
+            payload: weather
+        })
+    }
+};
