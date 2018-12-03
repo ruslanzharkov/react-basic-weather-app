@@ -15,8 +15,11 @@ export const getWeather = (cityName) => {
 const filterWeather = (weather) => {
     console.log('worked', weather.list);
     let newWeatherArray = [];
-    // for (let i = 0; i < weather.lengt)
+    for (let i = 0; i < weather.list.length; i++) {
+        newWeatherArray.push(Math.round(weather.list[i].main.temp))
+    }
 
+    console.log(newWeatherArray)
     return dispatch => {
         dispatch({
             type: actionTypes.GET_WEATHER,
