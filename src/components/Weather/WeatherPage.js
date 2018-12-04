@@ -36,8 +36,9 @@ class SingleWeatherPage extends Component {
             return {
                 weatherChart: {
                     label:'Population',
-                    data: nextProps.weather,
-                    backgroundColor:[
+                    datasets: [{
+                        data: nextProps.weather,
+                        backgroundColor:[
                         'rgba(255, 99, 132, 0.6)',
                         'rgba(54, 162, 235, 0.6)',
                         'rgba(255, 206, 86, 0.6)',
@@ -46,6 +47,7 @@ class SingleWeatherPage extends Component {
                         'rgba(255, 159, 64, 0.6)',
                         'rgba(255, 99, 132, 0.6)'
                     ]
+                    }]
                 },
                 data: nextProps.weather
             }
@@ -63,6 +65,7 @@ class SingleWeatherPage extends Component {
     };
 
     render() {
+        console.log(this.state.weatherChart)
         return (
           <div className={'weather-container'}>
             <Input value={this.state.value} onChange={this.cityChange} className={'weather-input'}/>
@@ -70,6 +73,7 @@ class SingleWeatherPage extends Component {
             <div>
                 <Line
                     data={this.state.weatherChart}
+                    width="600" height="150"
                 />
             </div>
           </div>
