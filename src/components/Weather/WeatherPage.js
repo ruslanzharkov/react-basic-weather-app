@@ -31,11 +31,10 @@ class SingleWeatherPage extends Component {
     }
 
     static getDerivedStateFromProps(nextProps, prevState) {
-        console.log(nextProps.weather) 
         if (nextProps.weather !== prevState.data) {
             return {
                 weatherChart: {
-                    labels: [1,2,3,4,5],
+                    labels: [],
                     label:'Population',
                     datasets: [{
                         data: nextProps.weather,
@@ -66,7 +65,6 @@ class SingleWeatherPage extends Component {
     };
 
     render() {
-        console.log(this.state.weatherChart)
         return (
           <div className={'weather-container'}>
             <Input value={this.state.value} onChange={this.cityChange} className={'weather-input'}/>
