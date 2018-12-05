@@ -36,7 +36,7 @@ class SingleWeatherPage extends Component {
                 weatherChart: {
                     type: 'line',
                     labels: nextProps.weatherData.weatherDates,
-                    label:'Population',
+                    label:'Weather',
                     datasets: [{
                         data: nextProps.weatherData.weather,
                         backgroundColor:[
@@ -78,6 +78,11 @@ class SingleWeatherPage extends Component {
                             display: 'Weather for city ',
                             text: 'Weather for city ',
                             fontSize: 16
+                        },
+                        legend: { 
+                            display: false,
+                            position: 'bottom',
+                            text: 'weather'
                         }
                     }}
                 />
