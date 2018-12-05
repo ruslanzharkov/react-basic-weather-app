@@ -31,10 +31,10 @@ class SingleWeatherPage extends Component {
     }
 
     static getDerivedStateFromProps(nextProps, prevState) {
-        console.log(nextProps.weatherData)
         if (nextProps.weather !== prevState.data) {
             return {
                 weatherChart: {
+                    type: 'line',
                     labels: nextProps.weatherData.weatherDates,
                     label:'Population',
                     datasets: [{
@@ -49,8 +49,7 @@ class SingleWeatherPage extends Component {
                         'rgba(255, 99, 132, 0.6)'
                     ]
                     }]
-                },
-                data: nextProps.weather
+                }
             }
         }
 
@@ -73,7 +72,14 @@ class SingleWeatherPage extends Component {
             <div>
                 <Line
                     data={this.state.weatherChart}
-                    width="600" height="150"
+                    width={600} height={150}
+                    options={{
+                        title:{
+                            display: 'Weather for city ',
+                            text: 'Weather for city ',
+                            fontSize: 16
+                        }
+                    }}
                 />
             </div>
           </div>
