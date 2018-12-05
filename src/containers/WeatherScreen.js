@@ -9,7 +9,7 @@ class SingleWeatherContainer extends Component {
         return(
             <WeatherPage 
                 getWeather={this.props.getWeather}
-                weather={this.props.weather}
+                weatherData={this.props.weatherData}
             />
         )
     }
@@ -17,7 +17,7 @@ class SingleWeatherContainer extends Component {
 
 function mapStateToProps (state) {
     return {
-        weather: state.weather
+        weatherData: state.weatherData
     };
 }
 

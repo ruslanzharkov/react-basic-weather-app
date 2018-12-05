@@ -11,7 +11,7 @@ class SingleWeatherPage extends Component {
         this.state = {
             cityName: '',
             weatherChart: {
-                labels: [1,2,3,4,5],
+                labels: [],
                 datasets: {
                     label:'Population',
                     data: [],
@@ -31,13 +31,14 @@ class SingleWeatherPage extends Component {
     }
 
     static getDerivedStateFromProps(nextProps, prevState) {
+        console.log(nextProps.weatherData)
         if (nextProps.weather !== prevState.data) {
             return {
                 weatherChart: {
-                    labels: [],
+                    labels: nextProps.weatherData.weatherDates,
                     label:'Population',
                     datasets: [{
-                        data: nextProps.weather,
+                        data: nextProps.weatherData.weather,
                         backgroundColor:[
                         'rgba(255, 99, 132, 0.6)',
                         'rgba(54, 162, 235, 0.6)',

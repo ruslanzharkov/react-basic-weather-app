@@ -25,8 +25,8 @@ const filterWeather = (weatherArray) => {
     store.dispatch({
         type: actionTypes.GET_WEATHER,
         payload: {
-            ...weather,
-            ...weatherDates
+            weather,
+            weatherDates
         }
     })
 };
