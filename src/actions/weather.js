@@ -13,14 +13,20 @@ export const getWeather = (cityName) => {
     }
 }
 
-const filterWeather = (weather) => {
-    let newWeatherArray = [];
-    for (let i = 0; i < weather.list.length; i++) {
-        newWeatherArray.push(Math.round(weather.list[i].main.temp))
+const filterWeather = (weatherArray) => {
+
+    let weather = [];
+    let weatherDates = [];
+    for (let i = 0; i < weatherArray.list.length; i++) {
+        weather.push(Math.round(weatherArray.list[i].main.temp))
+        weatherDates.push(weatherArray.list[i].dt_txt);
     }
 
     store.dispatch({
         type: actionTypes.GET_WEATHER,
-        payload: newWeatherArray
+        payload: {
+            ...weather,
+            ...weatherDates
+        }
     })
 };

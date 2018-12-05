@@ -35,6 +35,7 @@ class SingleWeatherPage extends Component {
         if (nextProps.weather !== prevState.data) {
             return {
                 weatherChart: {
+                    labels: [1,2,3,4,5],
                     label:'Population',
                     datasets: [{
                         data: nextProps.weather,
