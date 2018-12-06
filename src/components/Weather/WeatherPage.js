@@ -74,11 +74,6 @@ class SingleWeatherPage extends Component {
                     data={this.state.weatherChart}
                     width={600} height={150}
                     options={{
-                        title:{
-                            display: 'Weather for city ',
-                            text: 'Weather for city ',
-                            fontSize: 16
-                        },
                         legend: { 
                             display: false,
                             position: 'bottom',
