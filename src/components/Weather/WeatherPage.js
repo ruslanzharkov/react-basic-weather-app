@@ -69,7 +69,7 @@ class SingleWeatherPage extends Component {
           <div className={'weather-container'}>
             <Input value={this.state.value} onChange={this.cityChange} className={'weather-input'}/>
             <Button onClick={this.getWeatherByCity} className={'weather-button'}>Search</Button>
-            <div>
+            <div className={'chart-container'}>
                 <Line
                     data={this.state.weatherChart}
                     width={600} height={150}

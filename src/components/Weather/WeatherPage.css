@@ -31,3 +31,7 @@
     color: #41c7c7;
     border: 1px solid #41c7c7;
 }
+
+.chart-container {
+    margin-top: 250px;
+}
